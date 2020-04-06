@@ -1,4 +1,8 @@
-$.backstretch('images/home-background.jpg');
+if (document.getElementById("home")){
+	$.backstretch('images/home-background.jpg');
+} else {
+	$.backstretch('../images/home-background.jpg');
+}
 // Ensure hovering over the text in the home buttons causes the overlay to change
 var homeButtons = document.getElementsByClassName('home-btn');  
 for (i = 0; i < homeButtons.length; i++) {
@@ -9,3 +13,6 @@ for (i = 0; i < homeButtons.length; i++) {
 		this.children[1].style.backgroundColor = 'rgba(0,0,0,.2)';
 	}, false);
 }
+$(function(){
+	$( "#accordion" ).accordion();
+});

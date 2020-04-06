@@ -100,6 +100,23 @@ footer p {
 	background-color: rgba(0,0,0,.0);
 }
 
+/***** FUN FACTS *****/
+#accordion h3 {
+	width: 75vw;
+	border: 2px solid #333;
+	padding: 1rem;
+	background: rgba(255,255,255,.85);
+}
+#accordion h3:hover {
+	cursor: pointer;
+}
+#accordion div {
+	border: 2px solid #333;
+	padding: 1rem;
+	background: rgba(255,255,255,.85);
+	max-width: 75vw;
+}
+
 @media screen and (min-width: 720px) {
 	#home {
 		align-items: center;
