@@ -30,10 +30,13 @@ body {
 #home {
 	padding-top: 2rem;
 }
-#home h1 {
+#home h1, #facts h1 {
 	margin-bottom: 1rem;
 	color: #fff;
 	text-shadow: 1px 1px rgba(0,0,0,.75);
+}
+#facts h1 {
+	margin: 3rem 0;
 }
 .home-section {
 	display: flex;
@@ -104,17 +107,33 @@ footer p {
 #accordion h3 {
 	width: 75vw;
 	border: 2px solid #333;
+	border-bottom: 1px;
 	padding: 1rem;
 	background: rgba(255,255,255,.85);
 }
 #accordion h3:hover {
 	cursor: pointer;
 }
+#accordion h3:focus {
+	outline: none;
+}
+#accordion h3:last-child {
+	border-bottom: 2px solid #333;
+}
 #accordion div {
 	border: 2px solid #333;
+	border-bottom: 1px;
+	border-top: 0;
 	padding: 1rem;
 	background: rgba(255,255,255,.85);
 	max-width: 75vw;
+	color: #000;
+}
+#accordion .ui-accordion-header-active {
+	background: rgba(135,206,250,.9);
+}
+#accordion img {
+	max-width: 100%;
 }
 
 @media screen and (min-width: 720px) {
