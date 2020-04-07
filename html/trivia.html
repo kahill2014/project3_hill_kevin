@@ -1,25 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
-
 		<meta charset="utf-8">
-
-		<title></title>
-
-		<link type="text/css" rel="stylesheet" href="styles.css" />
-
+		<title>Project 3 - Otter Trivia</title>
+		<link rel="stylesheet" href="https://use.typekit.net/gri2qqb.css">
+		<link rel="text/css" href="../js/jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+		<link type="text/css" rel="stylesheet" href="../styles.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
-
-	<body>
-
-
+	<body id="trivia">
+		<header>
+			<a href="../index.html"><img src="../images/otter-logo.png" id="logo" /></a>
+			<button class="hamburger">☰</button>
+			<button class="cross">˟</button>
+			<nav class="desktop">
+				<ul>
+					<li><a href="fun-facts.html" class="nav-link">Fun Facts</a></li>
+					<li><a href="pictures.html" class="nav-link">Pictures</a></li>
+					<li><a href="trivia.html" class="nav-link active">Trivia</a></li>
+				</ul>
+			</nav>
+			<nav class="menu">
+				<ul>
+					<li><a href="fun-facts.html" class="nav-link">Fun Facts</a></li>
+					<li><a href="pictures.html" class="nav-link">Pictures</a></li>
+					<li><a href="trivia.html" class="nav-link active">Trivia</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<h1>Let's test your otter knowledge!</h1>
+			<section class="trivia-section">
+				<article id="trivia-1">
+					<h2>Question 1</h2>
+					<p class="trivia-question">How many species of otter exist globally?</p>
+					<span id="answer-1" class="trivia-answer">13;thirteen</span>
+				</article>
+				<article id="trivia-2">
+					<h2>Question 2</h2>
+					<p class="trivia-question">Name one common type of animal/creature otters eat.</p>
+					<span id="answer-2" class="trivia-answer">clams;mussels;crabs;sea urchins;clam;mussel;crab;sea urchin;urchins;urchin</span>
+				</article>
+				<article id="trivia-3">
+					<h2>Question 3</h2>
+					<p class="trivia-question">What are baby otters called?</p>
+					<span id="answer-3" class="trivia-answer">pup;pups;a pup</span>
+				</article>
+				<article id="trivia-4">
+					<h2>Question 4</h2>
+					<p class="trivia-question">What is a group of resting otters called?</p>
+					<span id="answer-4" class="trivia-answer">raft;a raft</span>
+				</article>
+				<article id="trivia-5">
+					<h2>Question 5</h2>
+					<p class="trivia-question">Which U.S. state is home to 90% of all sea otters?</p>
+					<span id="answer-5" class="trivia-answer">alaska</span>
+				</article>
+				<input id="input-val" type="text" />
+				<button id="submit">Submit</button>
+				<button id="reset">Start Over</button>
+				<p id="score">Score:&nbsp;<span id="current-score">0</span>&nbsp;/&nbsp;5</p>
+			</section>
+			<section class="rare-otter-section">
+				<h2>Meet the rarest otter - The Hairy-Nosed Otter</h2>
+				<article>
+					<img alt="Two hairy-nosed otters next to each other" src="../images/rare-otter.jpeg" />
+					<p>
+						The hairy-nosed otter occurs in coastal areas and on larger inland rivers, solitary or in groups of up to four. Its diet includes fish, such as walking catfish, snakeheads, and climbing perch, and water snakes, mollusks, and crustaceans. During the dry season, individuals forage in drainage canals and ponds.
+					</p><p>
+						Pairing of a male and a female may be limited to the breeding period. The contact call between otters is a single-syllabic chirp. Adult females call to pups with a staccato chatter. Not much is known about its breeding habits. Populations in the Mekong Delta possibly breed in November and December, and in Cambodia between November and March. The gestation period lasts around two months. A family of both parents and cubs were sighted between December and February.
+					</p><p>
+						Foraging is the main food-acquisition technique due to increased variation in monsoonal patterns in recent years due to global climate change.
+					</p><p>
+						The hairy-nosed otter is the rarest otter in Asia, most likely verging on extinction in the northern parts of its range and of uncertain status elsewhere. Only a few viable populations remain, widely scattered in region. The species is threatened by loss of lowland wetland habitats, hunting for fur and meat, and accidental killing during fishing.
+					</p><p>
+						In June 2008, the Wildlife Alliance-led Wildlife Rapid Rescue Team received a donated hairy-nosed otter caught near Tonle Sap. Working with Conservation International, they established a safe home for the rescued otter at the Phnom Tamao Wildlife Rescue Centre, but the otter, which had been frequently sick throughout its life in captivity, died of unknown causes in February 2010. Phnom Tamao Wildlife Rescue Centre rescued another hairy-nosed otter in July 2010, and hope it will become part of a future captive breeding program. This is currently the only known hairy-nosed otter in captivity.
+					</p><p>
+						Source: <a target="_blank" href="https://en.wikipedia.org/wiki/Hairy-nosed_otter"> Hairy-Nosed Otter Wikipedia</a>
+					</p>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p>Copyright 2020 - Kevin Hill</p>
+		</footer>
+		<script src="../js/backstretch.min.js"></script>
+		<script src="../js/hamburger.js"></script>
+		<script src="../js/main.js"></script>
 	</body>
-
 </html>
