@@ -18,6 +18,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-bottom: 5rem;
+	overflow-x: hidden;
 }
 .container {
 	display: flex;
@@ -27,21 +28,22 @@ body {
 	justify-content: center;
 	max-width: 90vw;
 }
-#home {
-	padding-top: 2rem;
-}
 h1 {
 	margin-bottom: 1rem;
 	color: #fff;
-	text-shadow: 1px 1px rgba(0,0,0,.75);
+	text-shadow: 2px 2px rgba(0,0,0,.75);
+	min-width: 100vw;
+	margin-top: 2rem;
+	text-align: center;
 }
 #facts h1, #pictures h1, #trivia h1 {
 	display: flex;
 	flex: 1;
 	flex-basis: 100%;
 	justify-content: center;
-	margin: 1rem 0;
+	margin-bottom: 1rem;
 	text-align: center;
+	padding: 1rem;
 }
 .home-section {
 	display: flex;
@@ -142,7 +144,7 @@ footer p {
 }
 
 /***** GALLERY *****/
-.lightbox-section {
+.lightbox-section, .trivia-section, .facts-section {
 	margin-top: 3rem;
 }
 #lightgallery {
@@ -251,7 +253,7 @@ footer p {
 	background: rgba(0,0,0,.85);
 	color: #fff;
 	padding: 2rem;
-	margin-top: 3rem;
+	margin-top: 5rem;
 }
 .rare-otter-section h2 {
 	display: flex;
@@ -343,13 +345,8 @@ header {
 		align-items: center;
 		justify-content: center;
 	}
-	#home h1 {
+	h1 {
 		font-size: 3rem;
-	}
-	#facts h1, #pictures h1, #trivia h1 {
-		justify-content: center;
-		margin-top: 3rem;
-		text-align: center;
 	}
 	.home-section {
 		background: rgba(0,0,0,.8);
@@ -405,8 +402,7 @@ header {
 		z-index: 0;
 		cursor: pointer;
 	}
-	.desktop ul li a:before, .desktop ul li a:after
-	{
+	.desktop ul li a:before, .desktop ul li a:after {
 		position: absolute;
 		left: 0px;
 		width: 100%;
@@ -417,20 +413,17 @@ header {
 		transition: all 0.3s;
 	}
 
-	.desktop ul li a:before
-	{
+	.desktop ul li a:before {
 		top: 0px;
 		transform: translateY(10px);
 	}
 
-	.desktop ul li a:after
-	{
+	.desktop ul li a:after {
 		bottom: 0px;
 		transform: translateY(-10px);
 	}
 
-	.desktop ul li a:hover:before, .desktop ul li a:hover:after
-	{
+	.desktop ul li a:hover:before, .desktop ul li a:hover:after {
 		opacity: 1;
 		transform: translateY(0px);
 	}

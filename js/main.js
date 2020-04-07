@@ -1,7 +1,7 @@
 if (document.getElementById("home")){
 	$.backstretch('images/home-background.jpg');
 } else {
-	$.backstretch('../images/home-background.jpg');
+	$.backstretch('../images/sub-background.jpg');
 }
 // Ensure hovering over the text in the home buttons causes the overlay to change
 var homeButtons = document.getElementsByClassName('home-btn');  
