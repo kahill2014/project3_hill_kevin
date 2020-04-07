@@ -13,11 +13,15 @@ for (i = 0; i < homeButtons.length; i++) {
 		this.children[1].style.backgroundColor = 'rgba(0,0,0,.2)';
 	}, false);
 }
-document.getElementById('fun-otters').addEventListener("click", function(){
-	document.getElementById('facts').style.cursor = 'url(../images/otter-cursor.png), auto';
-}, false);
+if(document.getElementById('fun-otters')){
+	document.getElementById('fun-otters').addEventListener("click", function(){
+		document.getElementById('facts').style.cursor = 'url(../images/otter-cursor.png), auto';
+	}, false);
+}
+
 $(function(){
 	$('#accordion').accordion({ 
 		heightStyle: 'content' 
 	});
+	$('#lightgallery').lightGallery();
 });

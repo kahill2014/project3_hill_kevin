@@ -137,6 +137,27 @@ footer p {
 	max-width: 100%;
 }
 
+/***** GALLERY *****/
+.lightbox-section {
+	margin-top: 3rem;
+}
+#lightgallery {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+}
+#lightgallery > a {
+	display: flex;
+	flex: .5;
+	flex-basis: 50%;
+}
+#lightgallery > a > img {
+	display: flex;
+	flex: 1;
+	width: 100%;
+}
+
 /***** Mobile menu *****/
 .hamburger{
   background:none;
@@ -244,5 +265,10 @@ header {
 	nav > ul > li > a:hover:before {
 	  visibility: visible;
 	  transform: scaleX(1);
+	}
+	#lightgallery > a {
+		display: flex;
+		flex: .5;
+		flex-basis: 25%;
 	}
 }
