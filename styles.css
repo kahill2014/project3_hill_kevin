@@ -445,7 +445,7 @@ header {
 	}
 	
 	.trivia-section {
-		max-width: 50vw;
+		max-width: 45vw;
 	}
 	#trivia .trivia-section button {
 		flex: .25;

@@ -77,7 +77,7 @@ function checkAnswer(answer, counter){
 /* Start the game over when "Start Over" is clicked by refreshing the page */
 if(document.getElementById('reset')){
 	document.getElementById('reset').addEventListener('click', function(){
-		window.location.href = window.location.href;
+		location.reload();
 	}, false);
 }
 /* When the page loads, run these functions */
